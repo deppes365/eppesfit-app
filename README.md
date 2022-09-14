@@ -6,6 +6,8 @@ This project is still under construction. This app will be able to register a us
 
 ## Technologies Used
  - React.js
-    - Redux
+    - React Router Dom
+    - React Icons
  - Redux Toolkit
  - Sass
+ - UUIDv4
