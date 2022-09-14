@@ -7,7 +7,6 @@ This project is still under construction. This app will be able to register a us
 In the project directory, you can run:
 
 ## Technologies Used
-
-### `React.js`
-### `Redux Toolkit`
-### `SASS`
+ - React.js
+ - Redux Toolkit
+ - Sass
