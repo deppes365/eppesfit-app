@@ -6,5 +6,6 @@ This project is still under construction. This app will be able to register a us
 
 ## Technologies Used
  - React.js
+    - Redux
  - Redux Toolkit
  - Sass
