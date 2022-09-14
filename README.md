@@ -1,12 +1,12 @@
 # Welcome to the EppesFit Workout App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is still under construction. This app will be able to register a user, track workouts via the user's input, and track a user's weight.
 
-## Available Scripts
+## Features
 
 In the project directory, you can run:
 
-### `npm start`
+## Technology Used
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
