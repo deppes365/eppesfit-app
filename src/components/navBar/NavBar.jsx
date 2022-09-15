@@ -20,7 +20,7 @@ function NavBar() {
 		<>
 			{showNav && (
 				<div className={`navBar ${darkModeActive ? 'darkMode' : ''}`}>
-					<Link to="/weight-in" className="navBarIcon weighIn">
+					<Link to="/weigh-in" className="navBarIcon weighIn">
 						<IoScaleOutline />
 					</Link>
 					<Link to="/" className="navBarIcon workout">

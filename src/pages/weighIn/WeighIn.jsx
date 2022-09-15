@@ -1,5 +1,4 @@
 import React from 'react'
-import './weighIn';
 
 function WeighIn() {
   return (
