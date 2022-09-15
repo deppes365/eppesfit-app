@@ -7,7 +7,9 @@ import Notification from './components/notification/Notification';
 import PrivateRoute from './components/privateRoute/PrivateRoute';
 import Workout from './pages/workout/Workout';
 import Profile from './pages/profile/Profile';
-import Settings from './pages/settings/Settings'
+import Settings from './pages/settings/Settings';
+import NavBar from './components/navBar/NavBar';
+
 function App() {
 	const { darkModeActive } = useSelector(state => state.app);
 
@@ -15,6 +17,7 @@ function App() {
 		<Router>
 			<div className={`App ${darkModeActive ? 'darkMode' : ''}`}>
 				<Notification />
+				<NavBar />
 				<Routes>
 					<Route path="/sign-in" element={<SignIn />} />
 					<Route path="/sign-up" element={<SignUp />} />
