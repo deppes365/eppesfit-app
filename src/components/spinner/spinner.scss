@@ -82,6 +82,18 @@
 		justify-content: center;
 		align-items: center;
 	}
+
+    &.darkMode {
+        background-color: $black;
+
+        .center {
+            background-color: $black;
+
+            h3 {
+                color: $off-white;
+            }
+        }
+    }
 }
 
 @keyframes spin {

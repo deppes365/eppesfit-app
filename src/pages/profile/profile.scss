@@ -9,27 +9,6 @@
     left: 0;
     transition: $transition3;
 
-
-    .topBar {
-        height: 40px;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0.5rem;
-        background: $blue-green-gradient ;
-
-        .backBtn {
-            font-size: 2.25rem;
-            color: $black;
-        }
-
-        .settingsBtn {
-            font-size: 1.5rem;
-            color: $black;
-        }
-    }
-
     .profileImg {
         width: 100%;
         display: flex;

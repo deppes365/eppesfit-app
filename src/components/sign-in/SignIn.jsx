@@ -5,6 +5,8 @@ import { AiFillEyeInvisible, AiFillEye } from 'react-icons/ai';
 import {useDispatch, useSelector} from 'react-redux';
 import { notificationMessages } from '../../notificationMessages';
 import {errorNotification} from '../../redux/notification/notifcationSlice'
+import {setLoading} from '../../redux/application/applicationSlice.js'
+import { useEffect } from 'react';
 
 function SignIn() {
 
@@ -16,6 +18,10 @@ function SignIn() {
 	});
 	const {darkModeActive} = useSelector(state => state.app)
 
+	// useEffect
+	useEffect(() => {
+		dispatch(setLoading(false))
+	}, [])
 	// Hooks
 	const dispatch = useDispatch()
 

@@ -1,25 +1,17 @@
 import React from 'react';
-import { useNavigate } from "react-router-dom";
 import './settings.scss';
 import {useSelector, useDispatch} from 'react-redux'
 import {darkMode} from '../../redux/application/applicationSlice.js'
-import {BiChevronLeft} from 'react-icons/bi'
+import PageBar from '../../components/pageBar/PageBar';
 
 function Settings() {
     const {darkModeActive} = useSelector(state => state.app)
     const dispatch = useDispatch()
-    const navigate = useNavigate()
-
-    const handleGoBack = () => {
-        navigate(-1);
-    }
+    
     
 	return (
 		<div className={`settings ${darkModeActive ? 'darkMode' : ''}`}>
-            <div className="title">
-                <BiChevronLeft className='backBtn' onClick={handleGoBack}/>
-                <h3>Settings</h3>
-            </div>
+            <PageBar pageTitle={'Settings'} gearIcon={false}/>
 			<div className="settingContainer">
 				<p>Dark Mode</p>
 				<label className="switch">

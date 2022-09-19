@@ -11,35 +11,6 @@
 	box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.3);
 	transition: $transition3;
 
-	// .activeLinkIndicator {
-	// 	position: absolute;
-	// 	background: $blue-green-gradient;
-	// 	width: 3rem;
-	// 	height: 3rem;
-	// 	border-radius: 50%;
-	// 	transition: 0.3s ease;
-	// 	top: 50%;
-	// 	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-
-	// 	&.weighIn {
-	// 		left: 14%;
-	// 		transform: translate(-14%, -50%);
-	// 	}
-
-	// 	&.workout {
-	// 		left: 50%;
-	// 		transform: translate(-50%, -50%);
-	// 	}
-
-	// 	&.profile {
-	// 		left: 86%;
-	// 		transform: translate(-86%, -50%);
-	// 	}
-
-	// 	&.none {
-	// 		display: none;
-	// 	}
-	// }
 
 	.navBarIcon {
 		height: 2.25rem;

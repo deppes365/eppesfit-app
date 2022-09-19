@@ -4,6 +4,7 @@ import './signUp.scss';
 import { AiFillEyeInvisible, AiFillEye } from 'react-icons/ai';
 import { useDispatch, useSelector } from 'react-redux';
 import { errorNotification } from '../../redux/notification/notifcationSlice';
+import {setLoading} from '../../redux/application/applicationSlice.js'
 
 function SignUp() {
 	// State
@@ -15,7 +16,13 @@ function SignUp() {
 		password: '',
 		confirmPassword: '',
 	});
-	const { darkModeActive } = useSelector(state => state.app);
+	const { darkModeActive, loading } = useSelector(state => state.app);
+
+
+	// useEffect
+	useEffect(() => {
+		dispatch(setLoading(false))
+	}, [])
 
 	// Hooks
 	const dispatch = useDispatch();

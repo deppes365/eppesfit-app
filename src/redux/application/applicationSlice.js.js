@@ -2,7 +2,7 @@ import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
 	loggedIn: false,
-	darkModeActive: false,
+	darkModeActive: true,
 	loading: true
 };
 
@@ -13,13 +13,13 @@ export const applicationSlice = createSlice({
 		darkMode: state => {
            state.darkModeActive = !state.darkModeActive
         },
-		loading: (state, action) => {
+		setLoading: (state, action) => {
 			state.loading = action.payload
 		}
 	},
 });
 
 // Action creators are generated for each case reducer function
-export const { darkMode, loading } = applicationSlice.actions;
+export const { darkMode, setLoading } = applicationSlice.actions;
 
 export default applicationSlice.reducer;
