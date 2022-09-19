@@ -1,0 +1,62 @@
+@import '../../variables.scss';
+
+.profilePage {
+    width: 100%;
+    height: calc(100vh - 60px);
+    background-color: $off-white;
+    position: fixed;
+    top: 0; 
+    left: 0;
+    transition: $transition3;
+
+
+    .topBar {
+        height: 40px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.5rem;
+        background: $blue-green-gradient ;
+
+        .backBtn {
+            font-size: 2.25rem;
+            color: $black;
+        }
+
+        .settingsBtn {
+            font-size: 1.5rem;
+            color: $black;
+        }
+    }
+
+    .profileImg {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 1rem;
+        gap: 0.5rem;
+
+        .imgContainer {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            overflow: hidden;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+
+    &.darkMode {
+        background-color: $black;
+
+        
+    }
+}
+

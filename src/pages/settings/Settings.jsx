@@ -3,7 +3,6 @@ import { useNavigate } from "react-router-dom";
 import './settings.scss';
 import {useSelector, useDispatch} from 'react-redux'
 import {darkMode} from '../../redux/application/applicationSlice.js'
-import {BsFillGearFill} from 'react-icons/bs'
 import {BiChevronLeft} from 'react-icons/bi'
 
 function Settings() {
@@ -20,7 +19,6 @@ function Settings() {
             <div className="title">
                 <BiChevronLeft className='backBtn' onClick={handleGoBack}/>
                 <h3>Settings</h3>
-                <BsFillGearFill />
             </div>
 			<div className="settingContainer">
 				<p>Dark Mode</p>

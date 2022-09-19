@@ -5,33 +5,103 @@
 	height: 60px;
 	background-color: $off-white;
 	position: fixed;
+	z-index: 10;
 	bottom: 0;
 	left: 0;
 	box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.3);
+	transition: $transition3;
+
+	// .activeLinkIndicator {
+	// 	position: absolute;
+	// 	background: $blue-green-gradient;
+	// 	width: 3rem;
+	// 	height: 3rem;
+	// 	border-radius: 50%;
+	// 	transition: 0.3s ease;
+	// 	top: 50%;
+	// 	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+
+	// 	&.weighIn {
+	// 		left: 14%;
+	// 		transform: translate(-14%, -50%);
+	// 	}
+
+	// 	&.workout {
+	// 		left: 50%;
+	// 		transform: translate(-50%, -50%);
+	// 	}
+
+	// 	&.profile {
+	// 		left: 86%;
+	// 		transform: translate(-86%, -50%);
+	// 	}
+
+	// 	&.none {
+	// 		display: none;
+	// 	}
+	// }
 
 	.navBarIcon {
-		font-size: 2.2rem;
+		height: 2.25rem;
+		width: 2.25rem;
 		color: $dark-gray;
 		position: absolute;
 		top: 50%;
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		transition: 0.3s ease;
+		border-radius: 50%;
 
-        &.weighIn {
+		&::after {
+			content: '';
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%) scale(0);
+			background: $blue-green-gradient;
+			height: 3rem;
+			width: 3rem;
+			border-radius: 50%;
+			z-index: -1;
+			transition: 0.3s ease;
+		}
+
+		&.active {
+			color: #fff;
+
+			&::after {
+				transform: translate(-50%, -50%) scale(1);
+			}
+		}
+
+		&.weighIn {
 			left: 15%;
 			transform: translate(-15%, -50%);
 		}
 
-        &.workout {
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
+		&.workout {
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
 
-		&.user {
+		&.profile {
 			left: 85%;
 			transform: translate(-85%, -50%);
+		}
+
+		.icon {
+			height: 100%;
+			width: 100%;
 		}
 	}
 
 	&.darkMode {
-		background-color: $black;
+		background-color: $dark-gray;
+		box-shadow: -2px -2px 10px $blue;
+
+		.navBarIcon {
+			color: $off-white;
+		}
 	}
 }

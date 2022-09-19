@@ -10,13 +10,15 @@ import Workout from './pages/workout/Workout';
 import Profile from './pages/profile/Profile';
 import Settings from './pages/settings/Settings';
 import NavBar from './components/navBar/NavBar';
+import Spinner from './components/spinner/Spinner';
 
 function App() {
-	const { darkModeActive } = useSelector(state => state.app);
+	const { darkModeActive, loading } = useSelector(state => state.app);
 
 	return (
 		<Router>
 			<div className={`App ${darkModeActive ? 'darkMode' : ''}`}>
+				{loading && (<Spinner />)}
 				<Notification />
 				<NavBar />
 				<Routes>
